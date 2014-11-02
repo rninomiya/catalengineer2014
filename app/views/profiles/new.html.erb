@@ -1,0 +1,15 @@
+<h1>New Profile</h1>
+
+<%= form_for(@profile) do |f| %>
+
+ <h3><%= f.label :name %></h3>
+  <%= f.text_field :name, class: "form-control"%>
+
+ <h3><%= f.label :avatar %></h3>
+  <%= f.text_field :avatar, class: "form-control"%>
+
+<br>
+  <%= f.submit "Create profile" %>
+  <%= link_to 'Back', profiles_path %>
+<% end %>
+
