@@ -6,7 +6,7 @@ class GroupsController < ApplicationController
   def create
     @group = Group.new(group_params)
     if @group.save 
-      redirect_to @group
+      redirect_to @group, notice: 'Group was successfully created.'
     else
       render :new
     end

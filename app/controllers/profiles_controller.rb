@@ -6,7 +6,7 @@ class ProfilesController < ApplicationController
   def create
     @profile = Profile.new(profile_params)
     if @profile.save 
-      redirect_to @profile
+      redirect_to @profile, notice: 'Profile was successfully created.'
     else
       render :new
     end
