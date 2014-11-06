@@ -16,6 +16,7 @@
         <td><%= profile.id %></td>
         <td><%= profile.name %></td>
         <td><%= profile.avatar %></td>
+        <td><%= link_to 'Destroy', profile, method: :delete, data:{ confirm:'本当に削除していいですか？'} %></td>
       </tr>
     <% end %>
   </tbody>
