@@ -1,4 +1,6 @@
 class GroupsController < ApplicationController
+  def newaction
+  end
   def new
     @group = Group.new
   end
